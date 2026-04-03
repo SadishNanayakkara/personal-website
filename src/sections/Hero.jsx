@@ -4,7 +4,6 @@ import {
   ChevronDown,
   Github,
   Linkedin,
-  Twitter,
   Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
@@ -120,10 +119,6 @@ export const Hero = () => {
                 {
                   icon: Linkedin,
                   href: "https://www.linkedin.com/in/sadish-nanayakkara/",
-                },
-                {
-                  icon: Twitter,
-                  href: "https://twitter.com/sadishnanayakkara",
                 },
               ].map((social, idx) => (
                 <a
