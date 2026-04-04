@@ -102,7 +102,7 @@ export const Achievements = () => {
           {achievements.map((item, idx) => (
             <div
               key={idx}
-              className="glass rounded-2xl overflow-hidden border border-primary/20 hover:border-primary/50 transition-all duration-500 animate-fade-in"
+              className="glass rounded-2xl overflow-hidden border border-primary/20 hover:border-primary/60 transition-all duration-500 animate-fade-in hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(0,0,0,0.6)]"
               style={{ animationDelay: `${(idx + 1) * 100}ms` }}
             >
               {/* Image header */}
@@ -150,8 +150,8 @@ export const Achievements = () => {
 
       {/* Lightbox / Album Viewer */}
       {activeAlbumIndex !== null && activeImages.length > 0 && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75">
-          <div className="relative max-w-4xl w-full mx-4 bg-background/80 rounded-2xl overflow-hidden glass-strong">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 animate-fade-in">
+          <div className="relative max-w-4xl w-full mx-4 bg-background/80 rounded-2xl overflow-hidden glass-strong animate-fade-in animation-delay-100">
             {/* Close button */}
             <button
               type="button"
@@ -200,10 +200,10 @@ export const Achievements = () => {
                     key={idx}
                     type="button"
                     onClick={() => setActiveImageIndex(idx)}
-                    className={`relative h-16 w-24 flex-shrink-0 rounded-md overflow-hidden border ${
+                    className={`relative h-16 w-24 flex-shrink-0 rounded-md overflow-hidden border transition-transform duration-300 ${
                       idx === activeImageIndex
-                        ? "border-primary shadow-[0_0_0_1px_rgba(32,178,166,0.7)]"
-                        : "border-border/60 hover:border-primary/60"
+                        ? "border-primary shadow-[0_0_0_1px_rgba(32,178,166,0.7)] scale-[1.02]"
+                        : "border-border/60 hover:border-primary/60 hover:scale-105"
                     }`}
                   >
                     <img

@@ -70,7 +70,7 @@ export const Projects = () => {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
+              className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1 transition-transform duration-500 hover:-translate-y-3 hover:shadow-[0_24px_60px_rgba(0,0,0,0.65)]"
               style={{ animationDelay: `${(idx + 1) * 100}ms` }}
             >
               {/* Image / Video */}

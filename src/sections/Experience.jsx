@@ -105,7 +105,7 @@ export const Experience = () => {
                   }`}
                 >
                   <div
-                    className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}
+                    className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/60 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.6)]`}
                   >
                     <span className="text-sm text-primary font-medium">
                       {exp.period}
