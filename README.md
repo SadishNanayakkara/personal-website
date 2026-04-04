@@ -1,5 +1,8 @@
 ## Sadish Nanayakkara – Personal Portfolio
 
+<img width="1435" height="814" alt="image" src="https://github.com/user-attachments/assets/fd6e8875-4d6f-4912-b029-5b1fe498c65e" />
+
+
 A modern, responsive personal portfolio built with React, Vite, and Tailwind CSS. It showcases my skills, projects, professional journey, and provides a simple way to contact me.
 
 ### Features
